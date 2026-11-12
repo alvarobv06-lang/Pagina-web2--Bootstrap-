@@ -1,5 +1,5 @@
 <?php
-require_once 'Calculadora.php'; // Esto le dice que use el molde anterior
+require_once 'Calculadora.php'; 
 
 class CalculadoraCientifica extends Calculadora {
     public function potencia($base, $exponente) {
