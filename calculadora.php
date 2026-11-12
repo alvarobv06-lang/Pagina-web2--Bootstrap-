@@ -25,14 +25,13 @@
         <br>
 
              <?php
-        // Línea 29: Ahora que el archivo existe, esto ya no dará error
         require_once 'Calculadora.php'; 
 
         if (isset($_POST['num1']) && isset($_POST['num2'])) {
             $num1 = $_POST['num1'];
             $num2 = $_POST['num2'];
             
-            $calc = new Calculadora(); // Línea 36
+            $calc = new Calculadora(); 
 
             echo '<ul class="list-group">';
             try {
