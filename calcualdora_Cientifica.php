@@ -22,7 +22,6 @@
         <br>
 
         <?php
-        // IMPORTANTE: Llamar a la clase científica
         require_once 'CalculadoraCientifica.php'; 
 
         if (isset($_POST['num1']) && isset($_POST['num2'])) {
@@ -33,13 +32,11 @@
 
             echo '<ul class="list-group">';
             try {
-                // Básicas
                 echo '<li class="list-group-item">Suma: ' . $calc->sumar($num1, $num2) . '</li>';
                 echo '<li class="list-group-item">Resta: ' . $calc->restar($num1, $num2) . '</li>';
                 echo '<li class="list-group-item">Multiplicación: ' . $calc->multiplicar($num1, $num2) . '</li>';
                 echo '<li class="list-group-item">División: ' . $calc->dividir($num1, $num2) . '</li>';
                 
-                // Científicas (Aquí estaba tu error de sintaxis en la captura)
                 echo '<li class="list-group-item list-group-item-success">Potencia: ' . $calc->potencia($num1, $num2) . '</li>';
                 echo '<li class="list-group-item list-group-item-success">Raíz Cuadrada de ' . $num1 . ': ' . $calc->raizCuadrada($num1) . '</li>';
                 
